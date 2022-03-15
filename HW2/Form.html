@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body>
+    <div>
+    <h4>Форма регистрации</h4>
+    <form action="#" method="post" name="registration-form" >
+       <div>
+            <label>E-mail*
+                <input type="email" required name="email">
+            </label>
+            <label>Пароль(мин. 6 знаков)*
+                <input type="password" required minlength="6" name="pass">
+            </label>
+            <label>Возраст*
+             <input type="number" max="110" name="age">
+            </label>
+            <label>Имя
+                <input type="text" name="name">
+            </label>
+            <label>Телефон
+                <input type="tel" name="phone" >
+            </label>
+       </div>
+       <div>
+            <input type="submit">
+            <input type="reset">
+       </div>
+    </form>
+        <p>*-Поле, обязательное для заполнения</p>
+    </div>
+    <div>
+        <h4>Подбор Кваритры</h4>
+        <form action="#" method="post" name="search">
+            <fieldset>
+                <legend>Введите адрес</legend>
+                <select size="1"name="location">
+                    <option value="sub">Метро</option>
+                    <option value="dis">Район</option>
+                    <option value="str">Улица</option>
+                </select>
+                <input type="text" name="locationtext">
+            </fieldset>
+            <div>
+                <label>Выберите кол-во комнат
+                    <input type="number" min="0" max="10" placeholder="0-студия">
+                </label>
+            </div>
+            <div>
+                <label>Год сдачи
+                    <input type="date" name="builddate">
+                </label>
+            </div>
+            <div>
+                <label>Площадь м.кв.
+                    <input type="number" min="0">
+                </label>
+            </div>
+            <fieldset>
+                <legend>Отделка</legend>
+                <label>С отделкой
+                    <input type="radio" name="finishing" value="yes">
+                </label>
+                <label>Без отделки
+                    <input type="radio" name="finishing" value="no">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Терраса</legend>
+                <label>С террасой
+                    <input type="radio" name="terrace" value="yes">
+                </label>
+                <label>Без террасы
+                    <input type="radio" name="terrace" value="no">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Класс</legend>
+                <label>Бизнес-класс
+                    <input type="checkbox" name="class[]" value="business">
+                </label>
+                <label>Премиум
+                    <input type="checkbox" name="class[]" value="prem">
+                </label>
+                <label>Deluxe
+                    <input type="checkbox" name="class[]" value="deluxe">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Этаж</legend>
+                <label>Не первый
+                    <input type="checkbox" name="floor[]" value="business">
+                </label>
+                <label>Не последний
+                    <input type="checkbox" name="floor" value="prem">
+                </label>
+                <p>или</p>
+                <label>Диапазон
+                    от<input type="text" name="min" placeholder="N">
+                    до<input type="text" name="max" placeholder="M">
+                </label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
