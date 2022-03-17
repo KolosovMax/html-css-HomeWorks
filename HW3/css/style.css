@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}
+li ul{
+    display:inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+}
+.hidden{
+    display: none;
+}
+a{
+    color: orangered;
+    text-decoration: none;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    background-color: orange;
+}
+.first{
+    border-bottom: 5px solid orangered;
+}

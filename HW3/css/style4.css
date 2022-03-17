@@ -1,0 +1,19 @@
+a{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 2px;
+    border: 2px solid orangered;
+    color: orangered;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.second{
+    background-color: orange;
+}
+div{
+    text-align: center;
+    margin-top: 50px;
+    white-space: nowrap;
+}

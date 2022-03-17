@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B3E5FC;
+    }
+.main {
+    width: 200px;
+    height: 250px;
+    display:block;
+
+}
+.annotation{
+    width: 200px;
+    background-color: #039BE5;
+    height: 100%;
+}
+.annotation img{
+    width: 55px;
+    border-radius: 50%;
+    background-color: #039BE5;
+    padding: 5%;
+    height: 55px;
+}
+span{
+    padding-left: 10px;
+}
+.card{
+    display: inline;
+    margin: 10px;
+    padding: 0;
+    float: left;
+    height: 100%;
+}
