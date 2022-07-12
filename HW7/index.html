@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div>
+        <ul class="mainmenu">
+            <li><a href="#">Пункт 1</a></li>
+            <li><a href="#">Пункт 2</a>
+                <ul class="submenu">
+                    <li><a href="#">Подпункт 2.1</a></li>
+                    <li><a href="#">Подпункт 2.2</a></li>
+                    <li><a href="#">Подпункт 2.3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Пункт 3</a></li>
+            <li><a href="#form">Личный кабинет</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div id="form">
+        <a href="#">X</a>
+        <form>
+            <input type="text" name="login" placeholder="логин"><br>
+            <input type="password" name="password" placeholder="пароль"><br>
+            <input type="checkbox" id="remember">
+            <label for="remember">  Запомнить</label><br>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
