@@ -28,10 +28,12 @@ a {
     text-transform: uppercase;
     display: inline-block;
 }
+
 input {
 
     margin-right: 20px;
 }
+
 .side {
     background-color: #D7CCC8;
     align-items: flex-end;
@@ -39,10 +41,12 @@ input {
     display: flex;
     flex-direction: column;
 }
+
 .stretch {
     align-items: stretch;
 
 }
+
 img {
     width: 90%;
     height: auto;
@@ -60,6 +64,10 @@ img {
 
 p:nth-child(2n) {
     margin-top: auto;
+}
+
+.side > a:first-child {
+    display: none;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -84,7 +92,8 @@ p:nth-child(2n) {
     header {
         border: 0;
     }
-    nav > a:first-child{
+
+    nav > a:first-child {
         margin-right: auto;
     }
 }
@@ -118,6 +127,7 @@ p:nth-child(2n) {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .card {
         background-color: orangered;
         border: 5px solid white;
@@ -125,4 +135,59 @@ p:nth-child(2n) {
         min-height: 50%;
     }
 
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    main > .flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side {
+        flex-direction: column;
+        padding-left: 40%;
+        padding-right: 35%;
+    }
+
+    .side > a {
+        display: none;
+        white-space: nowrap;
+    }
+
+    .side > a:first-child {
+        display: block;
+    }
+
+    header > .flex-row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav a:first-child {
+        display: block;
+    }
+
+    nav.flex-row {
+        flex-direction: column;
+    }
+
+    input {
+        display: none;
+    }
+
+    header {
+        border: 0;
+    }
+
+    nav a:first-child:hover ~ a {
+        display: block;
+    }
+
+    .side a:first-child:hover ~ a {
+        display: block;
+    }
 }
