@@ -18,6 +18,7 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 a {
@@ -27,12 +28,10 @@ a {
     text-transform: uppercase;
     display: inline-block;
 }
-
 input {
 
     margin-right: 20px;
 }
-
 .side {
     background-color: #D7CCC8;
     align-items: flex-end;
@@ -40,12 +39,10 @@ input {
     display: flex;
     flex-direction: column;
 }
-
 .stretch {
     align-items: stretch;
 
 }
-
 img {
     width: 90%;
     height: auto;
@@ -64,20 +61,70 @@ img {
 p:nth-child(2n) {
     margin-top: auto;
 }
-@media screen and (min-width: 992px) and (max-width: 1200px){
-    .side{
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .side {
         flex-direction: row;
-           }
-    main > .flex-row{
-        flex-direction: column;
-        align-items: flex-start;
+        padding-left: 7%;
     }
-    header>.flex-row{
+
+    .side a {
+        flex: 1;
+    }
+
+    main > .flex-row {
+        flex-direction: column;
+    }
+
+    header > .flex-row {
         flex-direction: column-reverse;
         align-items: flex-end;
     }
-    input{
-        margin-left: auto;
+
+    header {
+        border: 0;
+    }
+    nav > a:first-child{
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .side {
+        flex-direction: row;
+        padding-left: 7%;
     }
 
+    .side a {
+        flex: 1;
+        white-space: nowrap;
+    }
+
+    main > .flex-row {
+        flex-direction: column;
+    }
+
+    header > .flex-row {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    header {
+        border: 0;
+    }
+
+    .flex-md-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card {
+        background-color: orangered;
+        border: 5px solid white;
+        width: 100%;
+        min-height: 50%;
+    }
+    .flex-md-column{
+        flex-direction: column;
+    }
 }
